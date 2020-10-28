@@ -11,7 +11,7 @@ struct Repository: Decodable, Identifiable {
     let id: Int
     let owner: Owner
     let name: String
-    let description: String
+    let description: String?
     let starCount: Int
     let language: String
     let webPage: String?

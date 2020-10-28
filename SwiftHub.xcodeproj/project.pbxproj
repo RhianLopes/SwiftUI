@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,12 @@
 		963FDF4425479E4400BC4769 /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963FDF3625479E4300BC4769 /* Requester.swift */; };
 		963FDF4525479E4400BC4769 /* URLProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963FDF3725479E4300BC4769 /* URLProviders.swift */; };
 		963FDF4625479E4400BC4769 /* APISupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963FDF3825479E4300BC4769 /* APISupport.swift */; };
+		F16F50902548B3060026C8E5 /* RepositoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16F508F2548B3060026C8E5 /* RepositoryListView.swift */; };
+		F16F50932548BB020026C8E5 /* FetchImage in Frameworks */ = {isa = PBXBuildFile; productRef = F16F50922548BB020026C8E5 /* FetchImage */; };
+		F16F50962548BB1E0026C8E5 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = F16F50952548BB1E0026C8E5 /* Nuke */; };
+		F16F509A2548C40B0026C8E5 /* RepositoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16F50992548C40B0026C8E5 /* RepositoriesListView.swift */; };
+		F16F509C2548C4360026C8E5 /* RepositoriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16F509B2548C4360026C8E5 /* RepositoriesListViewModel.swift */; };
+		F16F509F2548CC8C0026C8E5 /* View+UINavigationBarApperance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16F509E2548CC8C0026C8E5 /* View+UINavigationBarApperance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +65,10 @@
 		963FDF3625479E4300BC4769 /* Requester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
 		963FDF3725479E4300BC4769 /* URLProviders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLProviders.swift; sourceTree = "<group>"; };
 		963FDF3825479E4300BC4769 /* APISupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APISupport.swift; sourceTree = "<group>"; };
+		F16F508F2548B3060026C8E5 /* RepositoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListView.swift; sourceTree = "<group>"; };
+		F16F50992548C40B0026C8E5 /* RepositoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListView.swift; sourceTree = "<group>"; };
+		F16F509B2548C4360026C8E5 /* RepositoriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListViewModel.swift; sourceTree = "<group>"; };
+		F16F509E2548CC8C0026C8E5 /* View+UINavigationBarApperance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+UINavigationBarApperance.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F16F50932548BB020026C8E5 /* FetchImage in Frameworks */,
+				F16F50962548BB1E0026C8E5 /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +121,9 @@
 		963FDEFC25479D8000BC4769 /* SwiftHub */ = {
 			isa = PBXGroup;
 			children = (
+				F16F509D2548CC2D0026C8E5 /* Extensions */,
+				F16F50972548C3D40026C8E5 /* Modules */,
+				F16F508E2548B2E20026C8E5 /* Components */,
 				963FDF3525479E4300BC4769 /* API */,
 				963FDF3025479E4300BC4769 /* Models */,
 				963FDEFD25479D8000BC4769 /* SwiftHubApp.swift */,
@@ -167,6 +182,39 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		F16F508E2548B2E20026C8E5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F16F508F2548B3060026C8E5 /* RepositoryListView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F16F50972548C3D40026C8E5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F16F50982548C3ED0026C8E5 /* RepositoriesList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F16F50982548C3ED0026C8E5 /* RepositoriesList */ = {
+			isa = PBXGroup;
+			children = (
+				F16F50992548C40B0026C8E5 /* RepositoriesListView.swift */,
+				F16F509B2548C4360026C8E5 /* RepositoriesListViewModel.swift */,
+			);
+			path = RepositoriesList;
+			sourceTree = "<group>";
+		};
+		F16F509D2548CC2D0026C8E5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F16F509E2548CC8C0026C8E5 /* View+UINavigationBarApperance.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -183,6 +231,10 @@
 			dependencies = (
 			);
 			name = SwiftHub;
+			packageProductDependencies = (
+				F16F50922548BB020026C8E5 /* FetchImage */,
+				F16F50952548BB1E0026C8E5 /* Nuke */,
+			);
 			productName = SwiftHub;
 			productReference = 963FDEFA25479D8000BC4769 /* SwiftHub.app */;
 			productType = "com.apple.product-type.application";
@@ -254,6 +306,10 @@
 				Base,
 			);
 			mainGroup = 963FDEF125479D8000BC4769;
+			packageReferences = (
+				F16F50912548BB020026C8E5 /* XCRemoteSwiftPackageReference "FetchImage" */,
+				F16F50942548BB1E0026C8E5 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = 963FDEFB25479D8000BC4769 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -298,12 +354,16 @@
 			files = (
 				963FDF4625479E4400BC4769 /* APISupport.swift in Sources */,
 				963FDF4425479E4400BC4769 /* Requester.swift in Sources */,
+				F16F509A2548C40B0026C8E5 /* RepositoriesListView.swift in Sources */,
+				F16F50902548B3060026C8E5 /* RepositoryListView.swift in Sources */,
 				963FDF4525479E4400BC4769 /* URLProviders.swift in Sources */,
 				963FDF4025479E4400BC4769 /* SearchResult.swift in Sources */,
 				963FDF4325479E4400BC4769 /* MockedData.swift in Sources */,
 				963FDF0025479D8000BC4769 /* ContentView.swift in Sources */,
 				963FDF4125479E4400BC4769 /* User.swift in Sources */,
 				963FDEFE25479D8000BC4769 /* SwiftHubApp.swift in Sources */,
+				F16F509C2548C4360026C8E5 /* RepositoriesListViewModel.swift in Sources */,
+				F16F509F2548CC8C0026C8E5 /* View+UINavigationBarApperance.swift in Sources */,
 				963FDF4225479E4400BC4769 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,6 +684,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F16F50912548BB020026C8E5 /* XCRemoteSwiftPackageReference "FetchImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/FetchImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.1;
+			};
+		};
+		F16F50942548BB1E0026C8E5 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F16F50922548BB020026C8E5 /* FetchImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F16F50912548BB020026C8E5 /* XCRemoteSwiftPackageReference "FetchImage" */;
+			productName = FetchImage;
+		};
+		F16F50952548BB1E0026C8E5 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F16F50942548BB1E0026C8E5 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 963FDEF225479D8000BC4769 /* Project object */;
 }
